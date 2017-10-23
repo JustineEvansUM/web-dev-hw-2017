@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Justine Evans">
+    <meta name="description" content="About me, contact, and location">
+    <title>About the Sandwhich Maker</title>
+    <style>
+      body {
+        background-color: #AFD55B;
+        background-image: url(../images/bg-condiments.png);
+      }
+      h1, h3 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+      }
+     .about-nav{
+        display: inline-block;
+        border: 10px solid #AFD55B;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="../images/cheese-outline.png" alt="Cheese Wheel" title="Cheese!" width="200" height="200" style="margin: -10% 10% 10% 10%; padding: 30px; position: absolute; z-index: -50; position: inline-block;" />-->
+
+    <!-- About Me and My Projects -->
+    <div style="margin: 10%; padding: 30px; background-color: white; border: 2px solid #333;">
+
+      <img src="../images/condiments.png" alt="Knife spreading Mayonaise" title="Condiments!" width="200" height="200" style="float: left; margin: 0 10px" />
+
+      <!-- Page Heading -->
+      <h1 id="about">Behind the Sandwich</h1>
+      <hr />
+
+      <!-- Page Navigation -->
+      <center>
+        <div style="width: 100%; display: table-row;">
+          <ul id="about-nav" style="text-align: center; padding: 0">
+            <li class="about-nav"><a href="#about-me">About Me</a></li>
+            <li class="about-nav"><a href="#location">Location</a></li>
+            <li class="about-nav"><a href="#job">My Work</a></li>
+          </ul>
+        </div>
+      </center>
+
+      <!-- 3 Required Paragraphs about Me or the Project -->
+      <h2 id="about-me">About Me</h2>
+      <p id="about-bio" class="about-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet ut lorem vitae venenatis. Ut ac ligula placerat, dignissim diam at, congue magna. Aliquam erat volutpat. Proin quis aliquam diam. Morbi ut efficitur eros. Curabitur pharetra et arcu id laoreet. Suspendisse et augue non nunc pulvinar facilisis sed sit amet lacus. Morbi accumsan pellentesque dui, id sollicitudin augue volutpat a. Etiam porta suscipit suscipit. Phasellus id eros in metus dictum finibus sed ac neque. Praesent suscipit ipsum dictum fermentum hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam quis felis gravida, ullamcorper enim nec, fringilla augue.</p>
+      <p id="about-snacks" class="about-p">Aliquam eu quam vel erat tempus finibus. Sed fermentum lobortis laoreet. Ut sit amet libero sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis quis nisl nunc. Cras arcu tortor, pulvinar et vestibulum eget, fermentum sed ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam ultrices diam vel ultrices. Nulla maximus diam et enim consequat, congue pharetra odio interdum. Nulla facilisi. Praesent placerat metus vitae mattis accumsan. Sed placerat ornare lorem, blandit laoreet massa interdum non. Aliquam metus diam, rutrum eget dui in, viverra ornare tortor. Duis rhoncus quam a commodo volutpat. Sed ullamcorper aliquam maximus. Ut fermentum ipsum imperdiet augue scelerisque aliquam.</p>
+      <p id="about-process" class="about-p">Integer et fringilla quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus tempor, magna eu euismod maximus, purus diam aliquam ante, fermentum euismod ligula nisl ut risus. Vestibulum felis nisl, accumsan sed tristique ac, finibus quis nunc. Pellentesque et urna ex. Mauris dapibus convallis porttitor. Fusce rhoncus sit amet tellus nec dignissim.</p>
+
+      <hr />
+
+      <!-- Location Section w/ Map -->
+      <h2 id="location">Location</h2>
+      <p>You can find me in beautiful Missoula, Montana!</p>
+      <p>
+        <a href="mailto:justine.evans@umontana.edu">justine.evans@umontana.edu</a>
+      </p>
+      <address>
+        University of Montana<br />
+        School of Media Arts, McGill Hall Rm 224<br />
+        32 Campus Dr<br />
+        Missoula, MT 59812
+      </address>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2728.048493383147!2d-113.98580903445786!3d46.86241807914246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535dcc33c3d4cbd5%3A0xd77cd4f46bdf5b89!2sMcGill+Hall%2C+32+Campus+Dr%2C+Missoula%2C+MT+59812!5e0!3m2!1sen!2sus!4v1508113451396" width="100%" height="400" frameborder="0" style="border: 2px solid #AFD55B" allowfullscreen></iframe>
+
+      <hr />
+
+      <!-- Hosted Video Section -->
+      <h2 id="job">My Work</h2>
+      <p>This website was produced for the class <cite>Introduction to Web Design & Development</cite> with the University of Montana, School of Media Arts</p>
+      <center>
+        <video poster="../images/mart-logo-poster.jpg" width="400" height="320" preload controls>
+        	<source src="../media/mart-logo-animated.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+        	<source src="../media/mart-logo-animated.webm" type='video/webm;codecs="vp8, vorbis"' />
+        	<p>The animated Media Arts logo.</p>
+        </video>
+      </center>
+    </div>
+
+    <!-- Navigation Bar With Relative Links -->
+    <div style="margin: -8% 10% 10% 10%; background-color: white; border: 2px solid #333;">
+      <div style="background-color: #333; margin: 0; ">
+        <h3 id="nav-title" style="color: white; margin: 0; padding: 10px;">Navig-EGG-tion</h3>
+      </div>
+      <p>
+        <ul id="nav-list">
+          <li><a href="../index.html">Back to Home</a></li>
+        </ul>
+      </p>
+    </div>
+  </body>
+</html>

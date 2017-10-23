@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Justine Evans">
+    <meta name="description" content="Submit and share experiences with the recipe">
+    <title>Share Your Egg-perience!</title>
+    <style>
+      body {
+        background-color: #FE9E92;
+        background-image: url(../images/bg-toast.png);
+      }
+      h1, h3 {
+      text-align: center;
+      }
+      p {
+      text-align: justify;
+      }
+      .select-cols {
+        width: 33%;
+        display: table-cell;
+        padding: 0px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- A Form to Submit Entries -->
+    <div style="margin: 10%; padding: 30px; background-color: white; border: 2px solid #333;">
+
+      <div style="display: table-row">
+        <!-- Page Image (NOTE: "Float" floats the image so that text can wrap aroung it.) -->
+        <img src="../images/toast.png" alt="Toster" title="Toast!" width="200" height="200" style="float: left; margin: 0 10px" />
+
+        <!-- Page Heading -->
+        <h1 id="more-info">Share your Egg-perience:</h1>
+        <hr />
+
+
+        <!-- Blog Submission Form -->
+        <p>Have you made an egg-ceptional sandwhich or other egg dish? We'd be delighted to hear from you! Use the form below to submit a description and image of your egg-ceptional creation.</p>
+      </div>
+
+      <form action="https://www.example.com/subscribe.php" method="post">
+        <!-- Registration Fieldset -->
+        <fieldset id="register">
+          <legend>Register For an Account</legend>
+
+          <label>Username:<br />
+            <input label="username" type="text" name="username" autofocus required/></label>
+          <br />
+          <label>Password:<br />
+            <input type="password" name="password" maxlength="12"/></label> (Password must be 8-12 characters long.)
+          <br />
+          <label>E-mail:<br />
+            <input type="email" name="email" placeholder="you@site.com"/></label>
+          <br />
+          <p><input type="image" src="../images/button-register.png" alt="Register Button" width="125" height="25"/></p>
+          <p><i>Already have an account? <a href="#">Log in</a> to continue.</i></p>
+        </fieldset>
+
+        <br />
+
+        <!-- Blog Submission Fieldset -->
+        <fieldset id="blog">
+          <legend>Submit to the Site Blog</legend>
+          <p>Please tell us a little about your recipe:</p>
+          <div class="table-row">
+
+            <!-- Radio Select -->
+            <div id="select-prep" class="select-cols">
+              <p>How were your eggs prepared?
+                  <br />
+                <input type="radio" name="recipe-prep" value="boiled" /><label for="boiled"> Boiled</label>
+                  <br />
+                <input type="radio" name="recipe-prep" value="fried" /><label for="fried"> Fried</label>
+                   <br />
+                <input type="radio" name="recipe-prep" value="poached" /><label for="poached"> Poached</label>
+                  <br />
+                <input type="radio" name="recipe-prep" value="scrambled" /><label for="scrambled"> Scrambled</label>
+                   <br />
+                <input type="radio" name="recipe-prep" value="baked" /><label for="baked"> Baked</label>
+                  <br />
+                <input type="radio" name="recipe-type" value="Other" /><label for="other"> Other</label>
+              </p>
+            </div>
+
+            <!-- Check Select -->
+            <div id="select-ing" class="select-cols">
+              <p>Did you use any of the following ingredients?
+                  <br />
+                <input type="checkbox" name="recipe-ing" value="eggs" checked /><label for="eggs"> Eggs</label>
+                  <br />
+                <input type="checkbox" name="recipe-ing" value="cheese" /><label for="cheese"> Cheese</label>
+                  <br />
+                <input type="checkbox" name="recipe-ing" value="salt" /><label for="salt"> Salt</label>
+                  <br />
+                <input type="checkbox" name="recipe-ing" value="Butter" /><label for="butter"> Butter</label>
+                  <br />
+                <input type="checkbox" name="recipe-ing" value="milk" /><label for="milk"> Milk or Cream</label>
+                  <br />
+                <input type="checkbox" name="recipe-ing" value="spices" /><label for="spices"> Spices</label>
+                  <br />
+              </p>
+            </div>
+
+            <!-- Dropdown Select -->
+            <div id="select-meal" class="select-cols">
+              <p>When did you serve your dish?<br />
+                <select name="meals">
+                 <option value="breakfast"><label for="breakfast">Breakfast</label></option>
+                 <option value="brunch" selected><label for="brunch">Brunch</label></option>
+                 <option value="lunch"><label for="lunch">Lunch</label></option>
+                 <option value="snack"><label for="snack">Snack</label></option>
+                 <option value="app"><label for="appetizer">Appetizer</label></option>
+                 <option value="dinner"><label for="dinner">Dinner</label></option>
+                 <option value="dessert"><label for="dessert">Dessert</label></option>
+                 <option value="other"><label for="other">Other</label></option>
+               </select>
+             </p>
+            </div>
+          </div>
+
+          <p>Share a little more about your egg-perience:<br />
+            <textarea name="user-experience" cols="5" rows="5" style="min-width:100%"></textarea>
+          </p>
+          <p>Upload an image of your dish:<br />
+            <input type="file" name="user-image" />
+            <br />
+            <input type="submit" value="Upload" />
+          </p>
+
+          <p><input type="image" src="../images/button-submit.png" alt="Register Button" width="125" height="25"/></p>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- Navigation Bar With Relative Links -->
+    <div style="margin: -8% 10% 10% 10%; background-color: white; border: 2px solid #333;">
+      <div style="background-color: #333; margin: 0; ">
+        <h3 id="nav-title" style="color: white; margin: 0; padding: 10px;">Navig-EGG-tion</h3>
+      </div>
+      <p>
+        <ul id="nav-list">
+          <li>Not quite ready? <a href="./instructions.html">Try the recipe again!</a></li>
+          <li><a href="../index.html">Back to Home</a></li>
+        </ul>
+      </p>
+    </div>
+  </body>
+</html>
